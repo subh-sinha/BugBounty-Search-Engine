@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bug Bounty Search Engine</title>
+    <title>Search Engine</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #000000;
-        }
-        
-        .background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
         }
         
         .button-container {
@@ -64,15 +55,27 @@
             font-size: 18px;
             color: #ffffff;
             margin-right: 10px;
+            text-align: center;
+            color: #ffffff; 
+            margin-top: 20px;
         }
         
-        .search-input {
-            padding: 8px;
-            font-size: 16px;
-            border: 2px solid #ffffff;
+
+        div.wrapper {
             border-radius: 4px;
-            background-color: transparent;
-            color: #ffffff;
+            display: grid;
+            place-items: center;
+
+        }
+
+        input[type="text"] {
+             display: block;
+             margin : 0 auto;
+             background-color: transparent;
+             color: #ffffff;
+             padding: 12px;
+            font-size: 16px;
+            
         }
 
         .background-video {
@@ -351,10 +354,14 @@
     </script>
     </head>
 <body>
-     </div>
-    <h1 style="text-align: center; color: #ffffff; margin-top: 50px;">Search Engine For Bug Bounty Hunters</h1>
-    <h2 style="display: flex;  color: #ffffff; margin-top: 20px;" for="target">Enter Target Domain:</h2>
-    <input type="text; margin-top: 20px;" id="target">
+    <video autoplay muted loop id="myVideo" class="background-video">
+        <source src="video.mp4" type="video/mp4" >
+      </video>    
+    <h1 style="text-align: center; color: #ffffff; margin-top: 50px;">Search Engine For Shubham</h1>
+    <h2  class="search-label" for="target">Enter Target Domain:</h2>
+    <div class="wrapper">
+    <input type="text" id="target" class="search-input" placeholder="https://www.example.com/">
+</div>
     <br>
     <br>
      <button class="futuristic-button" onclick="googleSearch(1)">Directory listing vulnerabilities</button>
@@ -423,10 +430,8 @@
     <button class="futuristic-button" onclick="googleSearch(64)">Directories containing SQL Installs and/or SQL databases</button>
     <br>
 <br>
-<div style="display: flex; justify-content: center;">
-<a href="https://www.youtube.com/@CyberHacks200" target="_blank">
-  <img src="https://nitinyadav00.github.io/Bug-Bounty-Search-Engine/Youtube-01.svg" width="150" height="150">
-</a>
+<div style="display: flex; justify-content: center;color: #ffffff;">
+<h4>SHUBHAM SINHA</h4>
 </div>
 </body>
 </html>"
